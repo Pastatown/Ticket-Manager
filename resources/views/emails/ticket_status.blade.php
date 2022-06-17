@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Suppor Ticket Status</title>
+    <title>Support Ticket Statut</title>
 </head>
 <body>
 <p>
-    Hello {{ ucfirst($ticketOwner->name) }},
+    Salut {{ ucfirst($ticketOwner->name) }},
 </p>
 <p>
-    Your support ticket with ID #{{ $ticket->ticket_id }} has been marked has resolved and closed.
+    Votre ticket au support avec l'ID #{{ $ticket->ticket_id }} a été résolu et fermé.
 </p>
 </body>
 </html>

@@ -12,15 +12,15 @@
 
                 <div class="panel-body">
                     @if ($tickets->isEmpty())
-                        <p>There are currently no tickets.</p>
+                        <p>Il n'y a pas de tickets actuellement.</p>
                     @else
                         <table class="table">
                             <thead>
                             <tr>
-                                <th>Category</th>
-                                <th>Title</th>
-                                <th>Status</th>
-                                <th>Last Updated</th>
+                                <th>Categorie</th>
+                                <th>Titre</th>
+                                <th>Statut</th>
+                                <th>Dernière màj</th>
                                 <th style="text-align:center" colspan="2">Actions</th>
                             </tr>
                             </thead>
@@ -45,7 +45,7 @@
                                     <td>{{ $ticket->updated_at }}</td>
                                     <td>
                                         @if($ticket->status === 'Open')
-                                            <a href="{{ url('tickets/' . $ticket->ticket_id) }}" class="btn btn-primary">Comment</a>
+                                            <a href="{{ url('tickets/' . $ticket->ticket_id) }}" class="btn btn-primary">Commenter</a>
 
                                             <form action="{{ url('admin/close_ticket/' . $ticket->ticket_id) }}" method="POST">
                                                 {!! csrf_field() !!}

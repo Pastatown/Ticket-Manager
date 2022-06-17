@@ -8,20 +8,20 @@
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <i class="fa fa-ticket"> My Tickets</i>
+                    <i class="fa fa-ticket"> Mes tickets</i>
                 </div>
 
                 <div class="panel-body">
                     @if($tickets->isEmpty())
-                        <p>You have not created any tickets.</p>
+                        <p>Vous n'avez pas encore créé de tickets.</p>
                     @else
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Category</th>
-                                    <th>Title</th>
-                                    <th>Status</th>
-                                    <th>Last Updated</th>
+                                    <th>Categorie</th>
+                                    <th>Titre</th>
+                                    <th>Statut</th>
+                                    <th>dernière màj</th>
                                 </tr>
                             </thead>
                             <tbody>

@@ -24,12 +24,12 @@
                         <p>Category: {{ $ticket->category->name }}</p>
                         <p>
                             @if ($ticket->status === 'Open')
-                                Status: <span class="label label-success">{{ $ticket->status }}</span>
+                                Statut: <span class="label label-success">{{ $ticket->status }}</span>
                             @else
-                                Status: <span class="label label-danger">{{ $ticket->status }}</span>
+                                Statut: <span class="label label-danger">{{ $ticket->status }}</span>
                             @endif
                         </p>
-                        <p>Created on: {{ $ticket->created_at->diffForHumans() }}</p>
+                        <p>Crée le: {{ $ticket->created_at->diffForHumans() }}</p>
                     </div>
 
                 </div>

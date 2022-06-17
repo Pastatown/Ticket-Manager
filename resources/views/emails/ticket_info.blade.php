@@ -6,15 +6,15 @@
 </head>
 <body>
 <p>
-Thank you {{ ucfirst($user->name) }} for contacting our support team. A support ticket has been opened for you. You will be notified when a response is made by email. The details of your ticket are shown below:
+Merci {{ ucfirst($user->name) }} d'avoir contacté le support. Un ticket au support a été ouvert pour vous. Vous allez être notifié par mail quand vous aurez une réponse. Les détails de votre ticket sont les suivants:
 </p>
 
-<p>Title: {{ $ticket->title }}</p>
-<p>Priority: {{ $ticket->priority }}</p>
-<p>Status: {{ $ticket->status }}</p>
+<p>Titre: {{ $ticket->title }}</p>
+<p>Priorité: {{ $ticket->priority }}</p>
+<p>Statut: {{ $ticket->status }}</p>
 
 <p>
-You can view the ticket at any time at {{ url('tickets/'. $ticket->ticket_id) }}
+Vous pouvez retrouver vos tickets ici {{ url('tickets/'. $ticket->ticket_id) }}
 </p>
 
 </body>
