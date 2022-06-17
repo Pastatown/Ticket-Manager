@@ -1,3 +1,12 @@
+Swan TANGUY
+
+Laravel ticket app for IUT
+
+admin@gmail.com P@ssw0rd
+demo@gmail.com P@ssw0rd
+
+Based on https://webmobtuts.com/backend-development/lets-implement-a-simple-ticketing-system-with-laravel/
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
